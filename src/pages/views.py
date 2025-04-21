@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+# from django.http import HttpResponse
 
 
 # Create your views here.
@@ -13,3 +13,6 @@ def contact_view(request, *args, **kwargs):
 
 def about_view(request, *args, **kwargs):
     return render(request, "about.html", {})
+
+def socials_view(request, *args, **kwargs):
+    return render(request, "socials.html", {})
