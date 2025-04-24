@@ -1,7 +1,20 @@
-{% extends 'base.html' %}
-{% block content %}
-<h1>Hello World</h1>
-{{request.user}}
-<p>This is a template</p>
+{% extends "base.html"%}
 
-{% endblock content%}
+
+{% block home_content %}
+<div id="home" class="Home">
+    <h2>Welcome !</h2>
+    <h1>
+        I Am <span>Collins Ngetich,</span>
+    </h1>
+    <img src="https://collinsngetich.vercel.app/assets/latestpic-IsaPZQfK.jpg" alt="Collins Photo" />
+    <h3>Software Engineer</h3>
+    <p>
+        <i>
+            Passionate about creating innovative solutions and learning new
+            technologies to solve complex problems
+        </i>
+    </p>
+
+</div>
+{% endblock %}
